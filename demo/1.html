@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>demo7</title>
+       <link rel="stylesheet" type="text/css" href="css/space.css">
+       <script>
+           var progress1 = document.getElementById("progress1");
+           var percent = progress1.value;
+           percent = 9;
+       </script>
+    </head>
+    <body>
+        <form>
+            <span>算法应用:</span>
+            <span><input class="radio" type="radio" name="sex" value="male" checked>预测</span>
+            <span><input class="radio" type="radio" name="sex" value="male" checked>关联关系分析</span>
+            <span><input class="radio" type="radio" name="sex" value="male" checked>智能诊断</span>
+            <br>
+            <span>卫星选择:</span>
+            <select class="satillite">
+                <option>请选择卫星</option>
+                <option>深圳</option>
+                <option>山东</option>
+                <option>北京</option>
+            </select>
+            <span style="margin-left: 102.6px;">算法:</span>
+            <select class="satillite">
+                <option>请选择卫星</option>
+                <option>深圳</option>
+                <option>山东</option>
+                <option>北京</option>
+            </select>
+            <input class="submit" type="submit" value="查询">
+        </form>
+        <button id="introduce">
+            +新增
+        </button>
+        <div class="envelope">
+            <img src="css/png/7@2x.png" style="height:27.52px ;width: 27.7px ;margin : 10.48px 16.27px ;float: left;">
+            <div style="padding-top: 13.74px; margin-left: 12.53px;">xxxxxx卫星</div>
+            <div class="editor"><img src="css/png/5.png"></div>
+            <div class="editor"><img src="css/png/4.png"></div>
+            <div class="editor"><img style="width: 15px ;height:15px" src="css/png/2.png"></div>
+            <div class="editor"><img src="css/png/3.png"></div>
+            <div style="margin-top: 40.26px;margin-left: 19.97px;">
+                <img style="height:20px ;width:20.32px ;float: left;" src="css/png/8@2x.png">
+                <div style="margin-left: 8.53px;float: left; font-size: 14px;">0A03</div>
+            </div>
+            <div style="float: left;margin-left: 77.16px;">
+                 <img style="width:21.83px;height:19.89px;float: left;" src="css/png/6@3x.png">
+                 <div style="margin-left: 12px;float: left;">xxxx算法</div>
+            </div>
+            <div style="clear:both; margin-left: 19px; padding-top: 16px; ">
+                 <img style="width:22px; height:22px; float: left;" src="css/png/9@2x.png">
+                 <div style="float: left;font-size: 14px;margin-left: 7px; ">
+                    2022-01-.5&nbsp; 13:26 2022-01-.7&nbsp; 13:32
+                </div>
+            </div>
+            <div style=" clear: left; margin-left: 19px; margin-top: 16px; ">
+                <div class="dialogs">60%</div>
+                <progress value="60" max="100" id="progress1"></progress>                
+           </div>
+           <div class="operate">
+               <img src="css/png/play.PNG" style="width: 20px; height: 20px;float: left;">
+               <div style="width: 20px; height: 20px;margin-left: 19px;background-color: #177ddc ;border-radius: 2px ;float: left;">
+                   <div style="width:10px; height: 10px;margin-left: 5px; margin-top:5px ; background-color: white; border-radius: 2px;">
+                   </div>
+                </div>
+               <div style="width: 66px; height: 20px;margin-left: 16px; float: left;background-color: #177ddc;color: white;font-size: 12px; text-align: center;padding-top : 2px; ">查看历史</div>
+               <div style="width: 66px; height: 20px;margin-left: 103px; float: left;background-color: #177ddc;color: white;font-size: 12px; text-align: center;padding-top : 2px; ;">模型训练</div>
+           </div>
+        </div>
+
+        <div class="envelope">
+            <img src="css/png/7@2x.png" style="height:27.52px ;width: 27.7px ;margin : 10.48px 16.27px ;float: left;">
+            <div style="padding-top: 13.74px; margin-left: 12.53px;">xxxxxx卫星</div>
+            <div class="editor"><img src="css/png/5.png"></div>
+            <div class="editor"><img src="css/png/4.png"></div>
+            <div class="editor"><img style="width: 15px ;height:15px" src="css/png/2.png"></div>
+            <div class="editor"><img src="css/png/3.png"></div>
+            <div style="margin-top: 40.26px;margin-left: 19.97px;">
+                <img style="height:20px ;width:20.32px ;float: left;" src="css/png/8@2x.png">
+                <div style="margin-left: 8.53px;float: left; font-size: 14px;">0A03</div>
+            </div>
+            <div style="float: left;margin-left: 77.16px;">
+                 <img style="width:21.83px;height:19.89px;float: left;" src="css/png/6@3x.png">
+                 <div style="margin-left: 12px;float: left;">xxxx算法</div>
+            </div>
+            <div style="clear:both; margin-left: 19px; padding-top: 16px; ">
+                 <img style="width:22px; height:22px; float: left;" src="css/png/9@2x.png">
+                 <div style="float: left;font-size: 14px;margin-left: 7px; ">
+                    2022-01-.5&nbsp; 13:26 2022-01-.7&nbsp; 13:32
+                </div>
+            </div>
+            <div style=" clear: left; margin-left: 19px; margin-top: 16px; ">
+                <div class="dialogs">60%</div>
+                <progress value="60" max="100" id="progress1"></progress>                
+           </div>
+           <div class="operate">
+               <img src="css/png/play.PNG" style="width: 20px; height: 20px;float: left;">
+               <div style="width: 20px; height: 20px;margin-left: 19px;background-color: #177ddc ;border-radius: 2px ;float: left;">
+                   <div style="width:10px; height: 10px;margin-left: 5px; margin-top:5px ; background-color: white; border-radius: 2px;">
+                   </div>
+                </div>
+               <div style="width: 66px; height: 20px;margin-left: 16px; float: left;background-color: #177ddc;color: white;font-size: 12px; text-align: center;padding-top : 2px; ">查看历史</div>
+               <div style="width: 66px; height: 20px;margin-left: 103px; float: left;background-color: #177ddc;color: white;font-size: 12px; text-align: center;padding-top : 2px; ;">模型训练</div>
+           </div>
+        </div>
+
+
+        <div class="envelope">
+            <img src="css/png/7@2x.png" style="height:27.52px ;width: 27.7px ;margin : 10.48px 16.27px ;float: left;">
+            <div style="padding-top: 13.74px; margin-left: 12.53px;">xxxxxx卫星</div>
+            <div class="editor"><img src="css/png/5.png"></div>
+            <div class="editor"><img src="css/png/4.png"></div>
+            <div class="editor"><img style="width: 15px ;height:15px" src="css/png/2.png"></div>
+            <div class="editor"><img src="css/png/3.png"></div>
+            <div style="margin-top: 40.26px;margin-left: 19.97px;">
+                <img style="height:20px ;width:20.32px ;float: left;" src="css/png/8@2x.png">
+                <div style="margin-left: 8.53px;float: left; font-size: 14px;">0A03</div>
+            </div>
+            <div style="float: left;margin-left: 77.16px;">
+                 <img style="width:21.83px;height:19.89px;float: left;" src="css/png/6@3x.png">
+                 <div style="margin-left: 12px;float: left;">xxxx算法</div>
+            </div>
+            <div style="clear:both; margin-left: 19px; padding-top: 16px; ">
+                 <img style="width:22px; height:22px; float: left;" src="css/png/9@2x.png">
+                 <div style="float: left;font-size: 14px;margin-left: 7px; ">
+                    2022-01-.5&nbsp; 13:26 2022-01-.7&nbsp; 13:32
+                </div>
+            </div>
+            <div style=" clear: left; margin-left: 19px; margin-top: 16px; ">
+                <div class="dialogs">60%</div>
+                <progress value="60" max="100" id="progress1"></progress>                
+           </div>
+           <div class="operate">
+               <img src="css/png/play.PNG" style="width: 20px; height: 20px;float: left;">
+               <div style="width: 20px; height: 20px;margin-left: 19px;background-color: #177ddc ;border-radius: 2px ;float: left;">
+                   <div style="width:10px; height: 10px;margin-left: 5px; margin-top:5px ; background-color: white; border-radius: 2px;">
+                   </div>
+                </div>
+               <div style="width: 66px; height: 20px;margin-left: 16px; float: left;background-color: #177ddc;color: white;font-size: 12px; text-align: center;padding-top : 2px; ">查看历史</div>
+               <div style="width: 66px; height: 20px;margin-left: 103px; float: left;background-color: #177ddc;color: white;font-size: 12px; text-align: center;padding-top : 2px; ;">模型训练</div>
+           </div>
+        </div>
+
+
+        <div class="envelope">
+            <img src="css/png/7@2x.png" style="height:27.52px ;width: 27.7px ;margin : 10.48px 16.27px ;float: left;">
+            <div style="padding-top: 13.74px; margin-left: 12.53px;">xxxxxx卫星</div>
+            <div class="editor"><img src="css/png/5.png"></div>
+            <div class="editor"><img src="css/png/4.png"></div>
+            <div class="editor"><img style="width: 15px ;height:15px" src="css/png/2.png"></div>
+            <div class="editor"><img src="css/png/3.png"></div>
+            <div style="margin-top: 40.26px;margin-left: 19.97px;">
+                <img style="height:20px ;width:20.32px ;float: left;" src="css/png/8@2x.png">
+                <div style="margin-left: 8.53px;float: left; font-size: 14px;">0A03</div>
+            </div>
+            <div style="float: left;margin-left: 77.16px;">
+                 <img style="width:21.83px;height:19.89px;float: left;" src="css/png/6@3x.png">
+                 <div style="margin-left: 12px;float: left;">xxxx算法</div>
+            </div>
+            <div style="clear:both; margin-left: 19px; padding-top: 16px; ">
+                 <img style="width:22px; height:22px; float: left;" src="css/png/9@2x.png">
+                 <div style="float: left;font-size: 14px;margin-left: 7px; ">
+                    2022-01-.5&nbsp; 13:26 2022-01-.7&nbsp; 13:32
+                </div>
+            </div>
+            <div style=" clear: left; margin-left: 19px; margin-top: 16px; ">
+                <div class="dialogs">60%</div>
+                <progress value="60" max="100" id="progress1"></progress>                
+           </div>
+           <div class="operate">
+               <img src="css/png/play.PNG" style="width: 20px; height: 20px;float: left;">
+               <div style="width: 20px; height: 20px;margin-left: 19px;background-color: #177ddc ;border-radius: 2px ;float: left;">
+                   <div style="width:10px; height: 10px;margin-left: 5px; margin-top:5px ; background-color: white; border-radius: 2px;">
+                   </div>
+                </div>
+               <div style="width: 66px; height: 20px;margin-left: 16px; float: left;background-color: #177ddc;color: white;font-size: 12px; text-align: center;padding-top : 2px; ">查看历史</div>
+               <div style="width: 66px; height: 20px;margin-left: 103px; float: left;background-color: #177ddc;color: white;font-size: 12px; text-align: center;padding-top : 2px; ;">模型训练</div>
+           </div>
+        </div>
+
+
+
+        <div class="envelope">
+            <img src="css/png/7@2x.png" style="height:27.52px ;width: 27.7px ;margin : 10.48px 16.27px ;float: left;">
+            <div style="padding-top: 13.74px; margin-left: 12.53px;">xxxxxx卫星</div>
+            <div class="editor"><img src="css/png/5.png"></div>
+            <div class="editor"><img src="css/png/4.png"></div>
+            <div class="editor"><img style="width: 15px ;height:15px" src="css/png/2.png"></div>
+            <div class="editor"><img src="css/png/3.png"></div>
+            <div style="margin-top: 40.26px;margin-left: 19.97px;">
+                <img style="height:20px ;width:20.32px ;float: left;" src="css/png/8@2x.png">
+                <div style="margin-left: 8.53px;float: left; font-size: 14px;">0A03</div>
+            </div>
+            <div style="float: left;margin-left: 77.16px;">
+                 <img style="width:21.83px;height:19.89px;float: left;" src="css/png/6@3x.png">
+                 <div style="margin-left: 12px;float: left;">xxxx算法</div>
+            </div>
+            <div style="clear:both; margin-left: 19px; padding-top: 16px; ">
+                 <img style="width:22px; height:22px; float: left;" src="css/png/9@2x.png">
+                 <div style="float: left;font-size: 14px;margin-left: 7px; ">
+                    2022-01-.5&nbsp; 13:26 2022-01-.7&nbsp; 13:32
+                </div>
+            </div>
+            <div style=" clear: left; margin-left: 19px; margin-top: 16px; ">
+                <div class="dialogs">60%</div>
+                <progress value="60" max="100" id="progress1"></progress>                
+           </div>
+           <div class="operate">
+               <img src="css/png/play.PNG" style="width: 20px; height: 20px;float: left;">
+               <div style="width: 20px; height: 20px;margin-left: 19px;background-color: #177ddc ;border-radius: 2px ;float: left;">
+                   <div style="width:10px; height: 10px;margin-left: 5px; margin-top:5px ; background-color: white; border-radius: 2px;">
+                   </div>
+                </div>
+               <div style="width: 66px; height: 20px;margin-left: 16px; float: left;background-color: #177ddc;color: white;font-size: 12px; text-align: center;padding-top : 2px; ">查看历史</div>
+               <div style="width: 66px; height: 20px;margin-left: 103px; float: left;background-color: #177ddc;color: white;font-size: 12px; text-align: center;padding-top : 2px; ;">模型训练</div>
+           </div>
+        </div>
+
+
+
+        <div class="envelope">
+            <img src="css/png/7@2x.png" style="height:27.52px ;width: 27.7px ;margin : 10.48px 16.27px ;float: left;">
+            <div style="padding-top: 13.74px; margin-left: 12.53px;">xxxxxx卫星</div>
+            <div class="editor"><img src="css/png/5.png"></div>
+            <div class="editor"><img src="css/png/4.png"></div>
+            <div class="editor"><img style="width: 15px ;height:15px" src="css/png/2.png"></div>
+            <div class="editor"><img src="css/png/3.png"></div>
+            <div style="margin-top: 40.26px;margin-left: 19.97px;">
+                <img style="height:20px ;width:20.32px ;float: left;" src="css/png/8@2x.png">
+                <div style="margin-left: 8.53px;float: left; font-size: 14px;">0A03</div>
+            </div>
+            <div style="float: left;margin-left: 77.16px;">
+                 <img style="width:21.83px;height:19.89px;float: left;" src="css/png/6@3x.png">
+                 <div style="margin-left: 12px;float: left;">xxxx算法</div>
+            </div>
+            <div style="clear:both; margin-left: 19px; padding-top: 16px; ">
+                 <img style="width:22px; height:22px; float: left;" src="css/png/9@2x.png">
+                 <div style="float: left;font-size: 14px;margin-left: 7px; ">
+                    2022-01-.5&nbsp; 13:26 2022-01-.7&nbsp; 13:32
+                </div>
+            </div>
+            <div style=" clear: left; margin-left: 19px; margin-top: 16px; ">
+                <div class="dialogs">60%</div>
+                <progress value="60" max="100" id="progress1"></progress>                
+           </div>
+           <div class="operate">
+               <img src="css/png/play.PNG" style="width: 20px; height: 20px;float: left;">
+               <div style="width: 20px; height: 20px;margin-left: 19px;background-color: #177ddc ;border-radius: 2px ;float: left;">
+                   <div style="width:10px; height: 10px;margin-left: 5px; margin-top:5px ; background-color: white; border-radius: 2px;">
+                   </div>
+                </div>
+               <div style="width: 66px; height: 20px;margin-left: 16px; float: left;background-color: #177ddc;color: white;font-size: 12px; text-align: center;padding-top : 2px; ">查看历史</div>
+               <div style="width: 66px; height: 20px;margin-left: 103px; float: left;background-color: #177ddc;color: white;font-size: 12px; text-align: center;padding-top : 2px; ;">模型训练</div>
+           </div>
+        </div>
+
+
+
+
+        <div class="envelope">
+            <img src="css/png/7@2x.png" style="height:27.52px ;width: 27.7px ;margin : 10.48px 16.27px ;float: left;">
+            <div style="padding-top: 13.74px; margin-left: 12.53px;">xxxxxx卫星</div>
+            <div class="editor"><img src="css/png/5.png"></div>
+            <div class="editor"><img src="css/png/4.png"></div>
+            <div class="editor"><img style="width: 15px ;height:15px" src="css/png/2.png"></div>
+            <div class="editor"><img src="css/png/3.png"></div>
+            <div style="margin-top: 40.26px;margin-left: 19.97px;">
+                <img style="height:20px ;width:20.32px ;float: left;" src="css/png/8@2x.png">
+                <div style="margin-left: 8.53px;float: left; font-size: 14px;">0A03</div>
+            </div>
+            <div style="float: left;margin-left: 77.16px;">
+                 <img style="width:21.83px;height:19.89px;float: left;" src="css/png/6@3x.png">
+                 <div style="margin-left: 12px;float: left;">xxxx算法</div>
+            </div>
+            <div style="clear:both; margin-left: 19px; padding-top: 16px; ">
+                 <img style="width:22px; height:22px; float: left;" src="css/png/9@2x.png">
+                 <div style="float: left;font-size: 14px;margin-left: 7px; ">
+                    2022-01-.5&nbsp; 13:26 2022-01-.7&nbsp; 13:32
+                </div>
+            </div>
+            <div style=" clear: left; margin-left: 19px; margin-top: 16px; ">
+                <div class="dialogs">60%</div>
+                <progress value="60" max="100" id="progress1"></progress>                
+           </div>
+           <div class="operate">
+               <img src="css/png/play.PNG" style="width: 20px; height: 20px;float: left;">
+               <div style="width: 20px; height: 20px;margin-left: 19px;background-color: #177ddc ;border-radius: 2px ;float: left;">
+                   <div style="width:10px; height: 10px;margin-left: 5px; margin-top:5px ; background-color: white; border-radius: 2px;">
+                   </div>
+                </div>
+               <div style="width: 66px; height: 20px;margin-left: 16px; float: left;background-color: #177ddc;color: white;font-size: 12px; text-align: center;padding-top : 2px; ">查看历史</div>
+               <div style="width: 66px; height: 20px;margin-left: 103px; float: left;background-color: #177ddc;color: white;font-size: 12px; text-align: center;padding-top : 2px; ;">模型训练</div>
+           </div>
+        </div>
+
+
+
+
+        <div class="envelope">
+            <img src="css/png/7@2x.png" style="height:27.52px ;width: 27.7px ;margin : 10.48px 16.27px ;float: left;">
+            <div style="padding-top: 13.74px; margin-left: 12.53px;">xxxxxx卫星</div>
+            <div class="editor"><img src="css/png/5.png"></div>
+            <div class="editor"><img src="css/png/4.png"></div>
+            <div class="editor"><img style="width: 15px ;height:15px" src="css/png/2.png"></div>
+            <div class="editor"><img src="css/png/3.png"></div>
+            <div style="margin-top: 40.26px;margin-left: 19.97px;">
+                <img style="height:20px ;width:20.32px ;float: left;" src="css/png/8@2x.png">
+                <div style="margin-left: 8.53px;float: left; font-size: 14px;">0A03</div>
+            </div>
+            <div style="float: left;margin-left: 77.16px;">
+                 <img style="width:21.83px;height:19.89px;float: left;" src="css/png/6@3x.png">
+                 <div style="margin-left: 12px;float: left;">xxxx算法</div>
+            </div>
+            <div style="clear:both; margin-left: 19px; padding-top: 16px; ">
+                 <img style="width:22px; height:22px; float: left;" src="css/png/9@2x.png">
+                 <div style="float: left;font-size: 14px;margin-left: 7px; ">
+                    2022-01-.5&nbsp; 13:26 2022-01-.7&nbsp; 13:32
+                </div>
+            </div>
+            <div style=" clear: left; margin-left: 19px; margin-top: 16px; ">
+                <div class="dialogs">60%</div>
+                <progress value="60" max="100" id="progress1"></progress>                
+           </div>
+           <div class="operate">
+               <img src="css/png/play.PNG" style="width: 20px; height: 20px;float: left;">
+               <div style="width: 20px; height: 20px;margin-left: 19px;background-color: #177ddc ;border-radius: 2px ;float: left;">
+                   <div style="width:10px; height: 10px;margin-left: 5px; margin-top:5px ; background-color: white; border-radius: 2px;">
+                   </div>
+                </div>
+               <div style="width: 66px; height: 20px;margin-left: 16px; float: left;background-color: #177ddc;color: white;font-size: 12px; text-align: center;padding-top : 2px; ">查看历史</div>
+               <div style="width: 66px; height: 20px;margin-left: 103px; float: left;background-color: #177ddc;color: white;font-size: 12px; text-align: center;padding-top : 2px; ;">模型训练</div>
+           </div>
+        </div>
+
+
+
+
+        <div class="envelope">
+            <img src="css/png/7@2x.png" style="height:27.52px ;width: 27.7px ;margin : 10.48px 16.27px ;float: left;">
+            <div style="padding-top: 13.74px; margin-left: 12.53px;">xxxxxx卫星</div>
+            <div class="editor"><img src="css/png/5.png"></div>
+            <div class="editor"><img src="css/png/4.png"></div>
+            <div class="editor"><img style="width: 15px ;height:15px" src="css/png/2.png"></div>
+            <div class="editor"><img src="css/png/3.png"></div>
+            <div style="margin-top: 40.26px;margin-left: 19.97px;">
+                <img style="height:20px ;width:20.32px ;float: left;" src="css/png/8@2x.png">
+                <div style="margin-left: 8.53px;float: left; font-size: 14px;">0A03</div>
+            </div>
+            <div style="float: left;margin-left: 77.16px;">
+                 <img style="width:21.83px;height:19.89px;float: left;" src="css/png/6@3x.png">
+                 <div style="margin-left: 12px;float: left;">xxxx算法</div>
+            </div>
+            <div style="clear:both; margin-left: 19px; padding-top: 16px; ">
+                 <img style="width:22px; height:22px; float: left;" src="css/png/9@2x.png">
+                 <div style="float: left;font-size: 14px;margin-left: 7px; ">
+                    2022-01-.5&nbsp; 13:26 2022-01-.7&nbsp; 13:32
+                </div>
+            </div>
+            <div style=" clear: left; margin-left: 19px; margin-top: 16px; ">
+                <div class="dialogs">60%</div>
+                <progress value="60" max="100" id="progress1"></progress>                
+           </div>
+           <div class="operate">
+               <img src="css/png/play.PNG" style="width: 20px; height: 20px;float: left;">
+               <div style="width: 20px; height: 20px;margin-left: 19px;background-color: #177ddc ;border-radius: 2px ;float: left;">
+                   <div style="width:10px; height: 10px;margin-left: 5px; margin-top:5px ; background-color: white; border-radius: 2px;">
+                   </div>
+                </div>
+               <div style="width: 66px; height: 20px;margin-left: 16px; float: left;background-color: #177ddc;color: white;font-size: 12px; text-align: center;padding-top : 2px; ">查看历史</div>
+               <div style="width: 66px; height: 20px;margin-left: 103px; float: left;background-color: #177ddc;color: white;font-size: 12px; text-align: center;padding-top : 2px; ;">模型训练</div>
+           </div>
+        </div>
+
+
+
+
+        <div class="envelope">
+            <img src="css/png/7@2x.png" style="height:27.52px ;width: 27.7px ;margin : 10.48px 16.27px ;float: left;">
+            <div style="padding-top: 13.74px; margin-left: 12.53px;">xxxxxx卫星</div>
+            <div class="editor"><img src="css/png/5.png"></div>
+            <div class="editor"><img src="css/png/4.png"></div>
+            <div class="editor"><img style="width: 15px ;height:15px" src="css/png/2.png"></div>
+            <div class="editor"><img src="css/png/3.png"></div>
+            <div style="margin-top: 40.26px;margin-left: 19.97px;">
+                <img style="height:20px ;width:20.32px ;float: left;" src="css/png/8@2x.png">
+                <div style="margin-left: 8.53px;float: left; font-size: 14px;">0A03</div>
+            </div>
+            <div style="float: left;margin-left: 77.16px;">
+                 <img style="width:21.83px;height:19.89px;float: left;" src="css/png/6@3x.png">
+                 <div style="margin-left: 12px;float: left;">xxxx算法</div>
+            </div>
+            <div style="clear:both; margin-left: 19px; padding-top: 16px; ">
+                 <img style="width:22px; height:22px; float: left;" src="css/png/9@2x.png">
+                 <div style="float: left;font-size: 14px;margin-left: 7px; ">
+                    2022-01-.5&nbsp; 13:26 2022-01-.7&nbsp; 13:32
+                </div>
+            </div>
+            <div style=" clear: left; margin-left: 19px; margin-top: 16px; ">
+                <div class="dialogs">60%</div>
+                <progress value="60" max="100" id="progress1"></progress>                
+           </div>
+           <div class="operate">
+               <img src="css/png/play.PNG" style="width: 20px; height: 20px;float: left;">
+               <div style="width: 20px; height: 20px;margin-left: 19px;background-color: #177ddc ;border-radius: 2px ;float: left;">
+                   <div style="width:10px; height: 10px;margin-left: 5px; margin-top:5px ; background-color: white; border-radius: 2px;">
+                   </div>
+                </div>
+               <div style="width: 66px; height: 20px;margin-left: 16px; float: left;background-color: #177ddc;color: white;font-size: 12px; text-align: center;padding-top : 2px; ">查看历史</div>
+               <div style="width: 66px; height: 20px;margin-left: 103px; float: left;background-color: #177ddc;color: white;font-size: 12px; text-align: center;padding-top : 2px; ;">模型训练</div>
+           </div>
+        </div>
+
+
+
+
+        <div class="envelope">
+            <img src="css/png/7@2x.png" style="height:27.52px ;width: 27.7px ;margin : 10.48px 16.27px ;float: left;">
+            <div style="padding-top: 13.74px; margin-left: 12.53px;">xxxxxx卫星</div>
+            <div class="editor"><img src="css/png/5.png"></div>
+            <div class="editor"><img src="css/png/4.png"></div>
+            <div class="editor"><img style="width: 15px ;height:15px" src="css/png/2.png"></div>
+            <div class="editor"><img src="css/png/3.png"></div>
+            <div style="margin-top: 40.26px;margin-left: 19.97px;">
+                <img style="height:20px ;width:20.32px ;float: left;" src="css/png/8@2x.png">
+                <div style="margin-left: 8.53px;float: left; font-size: 14px;">0A03</div>
+            </div>
+            <div style="float: left;margin-left: 77.16px;">
+                 <img style="width:21.83px;height:19.89px;float: left;" src="css/png/6@3x.png">
+                 <div style="margin-left: 12px;float: left;">xxxx算法</div>
+            </div>
+            <div style="clear:both; margin-left: 19px; padding-top: 16px; ">
+                 <img style="width:22px; height:22px; float: left;" src="css/png/9@2x.png">
+                 <div style="float: left;font-size: 14px;margin-left: 7px; ">
+                    2022-01-.5&nbsp; 13:26 2022-01-.7&nbsp; 13:32
+                </div>
+            </div>
+            <div style=" clear: left; margin-left: 19px; margin-top: 16px; ">
+                <div class="dialogs">60%</div>
+                <progress value="60" max="100" id="progress1"></progress>                
+           </div>
+           <div class="operate">
+               <img src="css/png/play.PNG" style="width: 20px; height: 20px;float: left;">
+               <div style="width: 20px; height: 20px;margin-left: 19px;background-color: #177ddc ;border-radius: 2px ;float: left;">
+                   <div style="width:10px; height: 10px;margin-left: 5px; margin-top:5px ; background-color: white; border-radius: 2px;">
+                   </div>
+                </div>
+               <div style="width: 66px; height: 20px;margin-left: 16px; float: left;background-color: #177ddc;color: white;font-size: 12px; text-align: center;padding-top : 2px; ">查看历史</div>
+               <div style="width: 66px; height: 20px;margin-left: 103px; float: left;background-color: #177ddc;color: white;font-size: 12px; text-align: center;padding-top : 2px; ;">模型训练</div>
+           </div>
+        </div>
+
+
+
+
+        <div class="envelope">
+            <img src="css/png/7@2x.png" style="height:27.52px ;width: 27.7px ;margin : 10.48px 16.27px ;float: left;">
+            <div style="padding-top: 13.74px; margin-left: 12.53px;">xxxxxx卫星</div>
+            <div class="editor"><img src="css/png/5.png"></div>
+            <div class="editor"><img src="css/png/4.png"></div>
+            <div class="editor"><img style="width: 15px ;height:15px" src="css/png/2.png"></div>
+            <div class="editor"><img src="css/png/3.png"></div>
+            <div style="margin-top: 40.26px;margin-left: 19.97px;">
+                <img style="height:20px ;width:20.32px ;float: left;" src="css/png/8@2x.png">
+                <div style="margin-left: 8.53px;float: left; font-size: 14px;">0A03</div>
+            </div>
+            <div style="float: left;margin-left: 77.16px;">
+                 <img style="width:21.83px;height:19.89px;float: left;" src="css/png/6@3x.png">
+                 <div style="margin-left: 12px;float: left;">xxxx算法</div>
+            </div>
+            <div style="clear:both; margin-left: 19px; padding-top: 16px; ">
+                 <img style="width:22px; height:22px; float: left;" src="css/png/9@2x.png">
+                 <div style="float: left;font-size: 14px;margin-left: 7px; ">
+                    2022-01-.5&nbsp; 13:26 2022-01-.7&nbsp; 13:32
+                </div>
+            </div>
+            <div style=" clear: left; margin-left: 19px; margin-top: 16px; ">
+                <div class="dialogs">60%</div>
+                <progress value="60" max="100" id="progress1"></progress>                
+           </div>
+           <div class="operate">
+               <img src="css/png/play.PNG" style="width: 20px; height: 20px;float: left;">
+               <div style="width: 20px; height: 20px;margin-left: 19px;background-color: #177ddc ;border-radius: 2px ;float: left;">
+                   <div style="width:10px; height: 10px;margin-left: 5px; margin-top:5px ; background-color: white; border-radius: 2px;">
+                   </div>
+                </div>
+               <div style="width: 66px; height: 20px;margin-left: 16px; float: left;background-color: #177ddc;color: white;font-size: 12px; text-align: center;padding-top : 2px; ">查看历史</div>
+               <div style="width: 66px; height: 20px;margin-left: 103px; float: left;background-color: #177ddc;color: white;font-size: 12px; text-align: center;padding-top : 2px; ;">模型训练</div>
+           </div>
+        </div>
+
+
+
+
+        <div class="envelope">
+            <img src="css/png/7@2x.png" style="height:27.52px ;width: 27.7px ;margin : 10.48px 16.27px ;float: left;">
+            <div style="padding-top: 13.74px; margin-left: 12.53px;">xxxxxx卫星</div>
+            <div class="editor"><img src="css/png/5.png"></div>
+            <div class="editor"><img src="css/png/4.png"></div>
+            <div class="editor"><img style="width: 15px ;height:15px" src="css/png/2.png"></div>
+            <div class="editor"><img src="css/png/3.png"></div>
+            <div style="margin-top: 40.26px;margin-left: 19.97px;">
+                <img style="height:20px ;width:20.32px ;float: left;" src="css/png/8@2x.png">
+                <div style="margin-left: 8.53px;float: left; font-size: 14px;">0A03</div>
+            </div>
+            <div style="float: left;margin-left: 77.16px;">
+                 <img style="width:21.83px;height:19.89px;float: left;" src="css/png/6@3x.png">
+                 <div style="margin-left: 12px;float: left;">xxxx算法</div>
+            </div>
+            <div style="clear:both; margin-left: 19px; padding-top: 16px; ">
+                 <img style="width:22px; height:22px; float: left;" src="css/png/9@2x.png">
+                 <div style="float: left;font-size: 14px;margin-left: 7px; ">
+                    2022-01-.5&nbsp; 13:26 2022-01-.7&nbsp; 13:32
+                </div>
+            </div>
+            <div style=" clear: left; margin-left: 19px; margin-top: 16px; ">
+                <div class="dialogs">60%</div>
+                <progress value="60" max="100" id="progress1"></progress>                
+           </div>
+           <div class="operate">
+               <img src="css/png/play.PNG" style="width: 20px; height: 20px;float: left;">
+               <div style="width: 20px; height: 20px;margin-left: 19px;background-color: #177ddc ;border-radius: 2px ;float: left;">
+                   <div style="width:10px; height: 10px;margin-left: 5px; margin-top:5px ; background-color: white; border-radius: 2px;">
+                   </div>
+                </div>
+               <div style="width: 66px; height: 20px;margin-left: 16px; float: left;background-color: #177ddc;color: white;font-size: 12px; text-align: center;padding-top : 2px; ">查看历史</div>
+               <div style="width: 66px; height: 20px;margin-left: 103px; float: left;background-color: #177ddc;color: white;font-size: 12px; text-align: center;padding-top : 2px; ;">模型训练</div>
+           </div>
+        </div>
+
+        <div class="pagination">
+            <span>共7501条</span>
+            <select>
+                <option>20条/页</option>
+                <option>深圳</option>
+                <option>山东</option>
+                <option>北京</option>
+            </select>
+            <a href="#">&lt;</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">...</a>
+            <a href="#">&gt;</a>
+        </div>
+ 
+        
+    </body>
+</html>
