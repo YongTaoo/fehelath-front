@@ -1,3 +1,5 @@
+/*主页部分*/
+
 
 *{
     box-sizing: border-box;
@@ -14,6 +16,8 @@ span{
     margin-left: 35px;
     margin-top: 25px;
 }
+
+
 
 form{
     margin-top: 24px;
@@ -39,13 +43,49 @@ select.satillite{
 }
 
 
+/*设置radio样式*/
+
 input.radio{
     width:16px;
     height:16px;
-    background-color:#132a36;
-    border:1px solid;
-    border-color:#2c5c73;
-    border-radius:8px;
+    appearance: none;
+    position: relative;
+    
+}
+
+input.radio:before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border: 1px solid #2c5c73;;
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+input.radio:checked:before{
+    content: '';
+    width: 8px;
+    height: 8px;
+    border: 1px solid #188dfe;
+    background:#188dfe;
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: middle;
+    left: 4px;
+    top: 4px;
+    display: block;
+    position: absolute
+}
+
+input.radio:checked::after{
+    content: '';
+    width: 16px;
+    height: 16px;
+    border: 1px solid #2c5c73;
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: middle;
 }
 
 input.submit{
@@ -81,22 +121,6 @@ button#introduce:hover{
 
 }
 
-div#add{
-    position: absolute;
-    display: none;
-    left: 727px;
-    top: 318px;
-    height: 397px;
-    width: 508px ;
-    text-align: center;
-    background-color:rgba(7, 29, 44, 0.94);
-    border:1px solid;
-    border-color:#4186a7;
-    box-shadow:0px 2px 18px rgba(0, 0, 0, 0.75);
-}
-
-
-
 div.envelope{
     float: left;
     overflow: auto;
@@ -110,20 +134,18 @@ div.envelope{
     
 }
 
-div.newone{
-
-    width:355px;
-    height:228px;
-    background-image:linear-gradient(180deg,#093553 0%,#071d2c 100%);
-    border:1px solid;
-    border-color:#143d51;
-
-    float: left;
-    overflow: auto;
-    margin-left: 24px;
-    margin-top: 24px;
-
+img.satillite{
+    height:27.52px ;
+    width: 27.7px ;
+    margin : 10.48px 16.27px ;
+    float: left ;
 }
+
+div.satillite-introduction{
+    padding-top: 13.74px;
+    margin-left: 12.53px;
+}
+
 
 div.editor{
 
@@ -139,6 +161,57 @@ div.editor img{
     height: 16px;
 }
 
+div.numberBlock{
+    margin-top: 40.26px;
+    margin-left: 19.97px;
+}
+
+div.numberBlock img{
+    height:20px ;width:20.32px ;float: left;
+}
+
+div.numberBlock div{
+    margin-left: 8.53px;float: left; font-size: 14px;
+}
+
+div.algorithmBlock{
+    float: left;
+    margin-left: 77.16px;
+}
+
+div.algorithmBlock img{
+    width:21.83px;
+    height:19.89px;
+    float: left;
+}
+
+div.algorithmBlock div{
+    margin-left: 12px;float: left;
+}
+
+div.timeBlock{
+    clear:both; 
+    margin-left: 19px; 
+    padding-top: 16px; 
+}
+
+div.timeBlock img{
+    width:22px;
+    height:22px; 
+    float: left;
+}
+
+div.timeBlock div{
+    float: left;
+    font-size: 14px;
+    margin-left: 7px;
+}
+
+div.dialogsBlock{
+    clear: left;
+    margin-left: 19px; 
+    margin-top: 16px;
+}
 
 .dialogs{
     width:41px;
@@ -180,6 +253,52 @@ progress{
 
 .operate{
     margin: 13.48px 21.5px;
+}
+
+.play{
+    width: 20px; 
+    height: 20px;
+    float: left;
+}
+
+.stopoutside{
+    width: 20px; 
+    height: 20px;
+    margin-left: 19px;
+    background-color: #177ddc ;
+    border-radius: 2px ;float: left;
+}
+
+.stopinside{
+    width:10px;
+    height: 10px;
+    margin-left: 5px;
+    margin-top:5px ; 
+    background-color: white; 
+    border-radius: 2px;
+}
+
+.history{
+    width: 66px; 
+    height: 20px;
+    margin-left: 16px; 
+    float: left;
+    background-color: #177ddc;
+    color: white;
+    font-size: 12px; 
+    text-align: center;
+    padding-top : 2px; 
+}
+
+.modelPratice{
+    width: 66px; 
+    height: 20px;
+    margin-left: 103px; 
+    float: left;
+    background-color: #177ddc;
+    color: white;font-size: 12px;
+    text-align: center;
+    padding-top : 2px; 
 }
 
 .center{
@@ -238,5 +357,81 @@ progress{
 .pagination a:hover:not(.active){
     background-color: #b56605 ;
     border-radius: 5px;
+}
+
+/*弹窗部分*/
+
+
+div#add{
+    position: absolute;
+    left: 38%;
+    top: 25%;
+    height: 397px;
+    width: 508px ;
+    text-align: center;
+    background-color:rgba(7, 29, 44, 0.94);
+    border:1px solid;
+    border-color:#4186a7;
+    box-shadow:0px 2px 18px rgba(0, 0, 0, 0.75);
+
+}
+
+div.header{
+    height: 46px; 
+    background-color: #043d59;
+    color: #8ed0f0; 
+    font-size:16px; 
+    padding-top: 11px;
+}
+
+#header-right{
+    float: right;
+    width: 9.95px;
+    height: 9.95px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: -20px;
+    margin-right: 15px;
+   }
+
+
+
+#sure{
+    float: left;
+    margin-left: 157px;
+    margin-top: 100px;
+    width:74px;
+    height:32px;
+    background-color:#112b2f;
+    border:1px solid; 
+    border-color:#1d7270;
+    border-radius:1px;
+    font-family:PingFangSC-Regular;
+    color:#ffffff;
+    font-size:18px;
+    text-align:center;
+    padding-top: 4px;
+
+}
+
+#cancel{
+    float: left;
+    margin-top: 100px;
+    margin-left: 47px;
+    width:74px;
+    height:32px;
+    background-color:#222f37;
+    border:1px solid;
+    border-color:#748b9d;
+    border-radius:1px;
+    font-family:PingFangSC-Regular;
+    color:rgba(255, 255, 255, 0.65);
+    font-size:18px;
+    text-align:center;
+    padding-top: 4px;
+}
+
+#cancel:hover{
+    background-color:darkgrey;
 }
 
